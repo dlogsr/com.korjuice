@@ -1,0 +1,157 @@
+body{
+	font-family: 'Muli', sans-serif;
+	font-weight:300;
+	color: #000;
+	padding:0;
+	top:0;
+	margin:0;
+}
+
+* {
+   margin: 0px;
+   padding: 0px;
+}
+
+.hidden{
+	display:none;
+}
+
+a{
+	color:#000;
+	text-decoration:none;
+}
+
+/*mobile first layout*/
+.navCats li{
+	display:block;
+	padding:.4em;
+	margin: 0 5% .1em 5%;
+	text-align:center;
+	background-color:#CFC;
+	border-radius:.4em;
+}
+
+.navCats li:hover{
+	background-color:#DFD;
+}
+
+#navi{
+	margin: 0 1em 0;
+	font-size:1.2em;
+}
+
+#logoimage{
+	position:relative;
+	background-image: url(korlogo_hz.png);
+	background-size:100%;
+	width:200px;
+	height:34px;
+	z-index:11;
+	margin: auto;
+}
+
+#navContainer{
+	position:absolute;
+	width:100%;
+	top:0;
+	box-shadow: 0px 1px 15px;
+	clear:both;
+	z-index:10;
+	background-color:#fff;
+	padding-bottom:.2em;
+}
+
+#mainContent{
+	position:relative;
+	text-align:center;
+}
+
+#navReset{
+	position:fixed;
+	z-index:9;
+	height: 20px;
+	background-color:#CFC;
+	right:0;
+	padding:.1em;
+	border:1px solid black;
+}
+
+/*layout if mid-size screen*/
+@media only screen and (min-width: 480px) and (max-width: 680px){
+	#navi{
+		margin-left:25%;
+		position:relative;
+		float:left;
+		text-align:center;
+	}
+
+	.navCats li{
+		display:block;
+		margin:0;
+		background-color:#fff;
+		padding: 0 1% 0 1%;
+	}
+
+	#logoimage{
+		float:right;
+		background-image: url(korlogo.png);
+		width:200px;
+		height:120px;
+	}
+
+	#navContainer{
+		/*position:fixed;*/
+		position:absolute;
+		top:0;
+	}
+
+	#mainContent{
+		margin-top:120px;
+		text-align:left;
+	}
+
+	#navReset{
+		top:0;
+	}
+
+}
+
+
+/*layout if full-screen*/
+@media only screen and (min-width: 681px){
+	#navi{
+		bottom:0;
+		margin:0 1em 1em;
+		position:absolute;
+		float:left;
+		width:100%;
+	}
+
+	.navCats li{
+		display:inline-block;
+		margin:0;
+		background-color:#fff;
+		padding: 0 1% 0 1%;
+	}
+
+	#logoimage{
+		float:right;
+		background-image: url(korlogo.png);
+		width:200px;
+		height:120px;
+	}
+
+	#navContainer{
+		position:fixed;
+		padding-right:200px;
+		top:0;
+	}
+
+	#mainContent{
+		margin-top:120px;
+		text-align:left;
+	}
+	#navReset{
+		display:none;
+	}
+}
