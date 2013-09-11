@@ -75,6 +75,7 @@ a{
 #mainContent{
 	position:relative;
 	text-align:center;
+	padding-top:10px;
 	top:250px;
 }
 
@@ -82,7 +83,8 @@ a{
 	position:fixed; 
 	top:0;
 	z-index:9;
-	height: 20px;
+	height: 40px;
+	font-size: 2em;
 	background-color:#CFC;
 	right:0;
 	padding:.1em;
