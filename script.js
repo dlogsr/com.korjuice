@@ -5,7 +5,8 @@
 
 var $navButton = $('.navCats .button'),
 	$navReset = $('#navReset'),
-	$navContainer = $('#navContainer');
+	$navContainer = $('#navContainer'),
+	$menuContainer = $('#menuContainer');
 var offset, section, navDroppedDown;
 
 $(document).ready(function(){
@@ -17,11 +18,11 @@ $(document).ready(function(){
 		console.log($(window).scrollTop());
 
 		//this is needed to prevent the menu from poppig up if at or near top of page
-		if($(window).scrollTop() <= '250'){navDroppedDown = false};
+		//if($(window).scrollTop() <= '250'){navDroppedDown = false};
 
 		console.log(navDroppedDown);
 		section = section + 'Content';
-		jumpOffset = $(section).offset().top;
+		jumpOffset = $(section).offset().top - 42;
 
 		if($navContainer.css('padding-right') == '200px'){jumpOffset -= 125};
 
@@ -38,6 +39,7 @@ $(document).ready(function(){
 	//the nav menu button; bring the menu down, slide it into screen
 	$('#navReset').click(function(){
 		$navContainer.css({position:'fixed', top:'-300px'}).animate({top: '0px'},250);
+		//$menuContainer.css({'box-shadow':'none','z-index':11}).animate({top:$navContainer.height()},250);
 		navDroppedDown = true;
 	});
 });
@@ -45,8 +47,8 @@ $(document).ready(function(){
 
 //catch if user has scrolled back to the top while the dropMenu is down; if so, lock it back up! 
 $(window).on("scroll",function(){
-	if($("body").scrollTop() == 0){
+	if($(document).scrollTop() === 0 && $(window).width() <= 760){
 		$navContainer.css({'position':'absolute',top:'0'});
-	}
-	navDroppedDown = false;
+		navDroppedDown = false;
+	};
 });

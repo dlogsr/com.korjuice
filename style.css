@@ -79,27 +79,54 @@ a{
 	top:250px;
 }
 
-#navReset{
+#menuContainer{
 	position:fixed; 
 	top:0;
-	z-index:9;
-	height: 40px;
-	font-size: 2em;
-	background-color:#CFC;
 	right:0;
-	padding:.1em;
-	border:1px solid black;
+	z-index:9;
+	height: 38px;
+	box-shadow: 0px 0px 10px;
+	background-color: #fff;
+	border-bottom-left-radius: 15px;
 }
 
+#menuLogo{
+	width: 70px;
+	height:38px;
+	background-image: url(img/korlogo_tiny.png);
+	display:inline-block;
+	margin-right:-10px;
+	z-index:8;
+	border-bottom-left-radius: 15px;
+}
+
+#navReset{
+	width: 60px;
+	height:38px;
+	background-image: url(img/menu.png);
+	display:inline-block;
+	z-index:8;
+}
 
 #mainContent section{
-	padding: 0 1em 2em;
+	padding: 0 1em 1em;
+}
+
+#mainContent aside{
+	margin-bottom:1em;
+	background-color:#F8F8F8;
+	border-radius:20px;
 }
 
 .sectionText{
 	text-align:justify;
-	padding: 0 1em 0;
+	padding: 1em;
+	margin-top:1em;
 }
+
+/*#testimonialsText{
+	margin: 0 2em 0;
+}*/
 
 /*generalized selectors; look into simplifying/specifying*/
 img{
@@ -114,13 +141,30 @@ ol {
 ol li{
 	font-style:italic;
 	text-align:left;
-	font-size:.8em;
+	/*font-size:.8em;*/
 }
 
 p strong{
 	text-align:center !important;
 }
 
+h1{
+	margin-top:38px;
+	background-color:#CFC;
+	border-radius:15px;
+}
+
+dl, .sectionText ul, .sectionText li{
+	margin: 1em;
+}
+
+dt{
+	margin: 1em auto .5em;
+}
+
+dd{
+	margin-left:2em;
+}
 
 
 /*layout if mid-size screen*/
