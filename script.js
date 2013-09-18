@@ -6,11 +6,16 @@
 var $navButton = $('.navCats .button'),
 	$navReset = $('#navReset'),
 	$navContainer = $('#navContainer'),
-	$menuContainer = $('#menuContainer');
+	$menuContainer = $('#menuContainer'),
+	$splashTop = $('#splashTop'),
+	$menuLogo = $('#menuLogo'),
+	$windowHeight = $(window).height();
 var offset, section, navDroppedDown;
 
 $(document).ready(function(){
+	//fix anchor tag links to not scroll to top
 	$('.button a').removeAttr('href');
+	$splashTop.css({'height':$windowHeight});
 
 	$navButton.click(function(){
 		section = '#'+ $(this).attr('id');
@@ -24,6 +29,7 @@ $(document).ready(function(){
 		section = section + 'Content';
 		jumpOffset = $(section).offset().top - 42;
 
+		// if we are in full-screen mode (desktop) then make sure there is a constant fixed offset
 		if($navContainer.css('padding-right') == '200px'){jumpOffset -= 125};
 
 		$('html,body').stop().animate({scrollTop : jumpOffset},400);
@@ -47,8 +53,20 @@ $(document).ready(function(){
 
 //catch if user has scrolled back to the top while the dropMenu is down; if so, lock it back up! 
 $(window).on("scroll",function(){
-	if($(document).scrollTop() === 0 && $(window).width() <= 760){
+	if($(document).scrollTop() <= $windowHeight && $(window).width() <= 760){
 		$navContainer.css({'position':'absolute',top:'0'});
 		navDroppedDown = false;
+		$menuLogo.css({'background-image':'url(korlogo_hz.png)','width':'200'});
+	}
+	else{
+		$menuLogo.css({'background-image':'url(img/korlogo_tiny.png)','width':'70'});
 	};
 });
+
+
+
+$(window).resize(function(){
+	$windowHeight = $(window).height();
+	$splashTop.css({'height':$windowHeight});
+
+})

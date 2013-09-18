@@ -76,7 +76,7 @@ a{
 	position:relative;
 	text-align:center;
 	padding-top:10px;
-	top:250px;
+	top:280px;
 }
 
 #menuContainer{
@@ -91,9 +91,9 @@ a{
 }
 
 #menuLogo{
-	width: 70px;
+	width: 200px;
 	height:38px;
-	background-image: url(img/korlogo_tiny.png);
+	background-image: url(korlogo_hz.png);
 	display:inline-block;
 	margin-right:-10px;
 	z-index:8;
@@ -118,6 +118,59 @@ a{
 	border-radius:20px;
 }
 
+#splashTop {
+	height:350px;
+	background-color:#000;
+	position:relative;
+}
+
+.splashContainer{
+	position:absolute;
+	width:100%;
+	max-width:500px;
+	height:33%;
+	border: 2px solid black;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	border-radius: 15px;
+	box-sizing: border-box;
+}
+
+.card {
+	font-size:1.5em;
+	color:#fff;
+	position:absolute;
+	background: rgba(0,0,0,.75);
+	width: 50%;
+	bottom:0;
+	padding-left:1em;
+	border-bottom-left-radius:10px;
+	border-top-right-radius: 15px;
+	z-index:0;
+}
+
+#splashFight{
+	top:66%;
+	background-image: url(img/cards_fight.jpg);
+	background-size: 100%;
+}
+
+#splashVision{
+	top:33%;
+	background-image: url(img/cards_vision.jpg);
+	background-size: 100%;
+}
+
+#splashJuicing{
+	top:0%;
+	background-image: url(img/cards_juicing.jpg);
+	background-size: 100%;
+}
+
+#theRest{
+	position:relative;
+}
+
 .sectionText{
 	text-align:justify;
 	padding: 1em;
@@ -129,7 +182,7 @@ a{
 }*/
 
 /*generalized selectors; look into simplifying/specifying*/
-img{
+#mainContent img{
 	width:90%;
 	padding: 2em 0 2em;
 }
@@ -196,15 +249,14 @@ dd{
 	}
 
 	#mainContent{
-		top:125px;
+		top:155px;
 	}
 
 	#navReset{
 		top:0;
 	}
 
-	img{
-		width:90%;
+	#mainContent img{
 		max-width:585px;
 	}
 
