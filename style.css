@@ -27,7 +27,7 @@ a{
 	text-decoration:none;
 }
 
-.button:hover{
+.navButton:hover, .button:hover{
 	cursor:pointer;
 }
 
@@ -76,7 +76,7 @@ a{
 	position:relative;
 	text-align:center;
 	padding-top:10px;
-	top:280px;
+	/*top:280px;*/
 }
 
 #menuContainer{
@@ -108,6 +108,16 @@ a{
 	z-index:8;
 }
 
+#navClose{
+	width: 20px;
+	height:20px;
+	background-image: url(img/close.png);
+	position:absolute;
+	bottom:0;
+	right:0;
+	z-index:20;
+}
+
 #mainContent section{
 	padding: 0 1em 1em;
 }
@@ -122,6 +132,14 @@ a{
 	height:350px;
 	background-color:#000;
 	position:relative;
+	width:100%;
+	margin:auto;
+}
+
+#splashSeparator{
+	background-color:#000;
+	height:60px;
+	z-index:100;
 }
 
 .splashContainer{
@@ -134,14 +152,15 @@ a{
 	border-top: 1px solid black;
 	border-radius: 15px;
 	box-sizing: border-box;
+	margin: 0 auto;
 }
 
 .card {
-	font-size:1.5em;
+	font-size:1em;
 	color:#fff;
 	position:absolute;
 	background: rgba(0,0,0,.75);
-	width: 50%;
+	width: 75%;
 	bottom:0;
 	padding-left:1em;
 	border-bottom-left-radius:10px;
@@ -149,23 +168,32 @@ a{
 	z-index:0;
 }
 
-#splashFight{
+#fightSplash{
 	top:66%;
 	background-image: url(img/cards_fight.jpg);
 	background-size: 100%;
 }
 
-#splashVision{
+#visionSplash{
 	top:33%;
 	background-image: url(img/cards_vision.jpg);
 	background-size: 100%;
 }
 
-#splashJuicing{
+#juicingSplash{
 	top:0%;
 	background-image: url(img/cards_juicing.jpg);
 	background-size: 100%;
 }
+
+.cardText{
+	color:#fff;
+	display:none;
+}
+
+/*.cardText:hover{
+	display:inline;
+}*/
 
 #theRest{
 	position:relative;
@@ -264,6 +292,24 @@ dd{
 		font-size:2em;
 	}
 
+	.splashContainer{
+		width:75%;
+	}
+
+	#visionSplash{
+		top:33%;
+		left:12%;
+	}
+
+	#juicingSplash{
+		top:0%;
+	}
+
+	#fightSplash{
+		top:66%;
+		left: 24%;
+	}
+
 }
 
 
@@ -312,5 +358,36 @@ dd{
 
 	h1{
 		font-size:3em;
+	}
+
+	.hidden{
+		display:inline;
+	}
+
+	#splashTop{
+		margin-top:120px;
+		text-align:center;
+	}
+
+	.splashContainer{
+		display:inline-block;
+		position:relative;
+		width:32%;
+		top:10% !important;
+	}
+
+	#juicingSplash, #visionSplash, #fightSplash{
+		bottom:auto;
+	}
+
+	.cardText{
+		display:inline-block;
+		position:absolute;
+		top:110%;
+		text-align:justify;
+		/*need to figure out why this was needed */
+		width:90%;
+		left:5%;
+		padding:;
 	}
 }
