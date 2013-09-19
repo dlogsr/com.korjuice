@@ -36,7 +36,7 @@ function fullWindowHeight(){
 
 $(document).ready(function(){
 	//fix anchor tag links to not scroll to top
-	$('.button a').removeAttr('href');
+	$('.navButton a').removeAttr('href');
 	$splashTop.css({'height':fullWindowHeight()});
 
 	$navButton.click(function(){
@@ -74,15 +74,17 @@ $(document).ready(function(){
 });
 
 
-//catch if user has scrolled back to the top while the dropMenu is down; if so, lock it back up! 
+//catch if use has scrolled past the splash page
 $(window).on("scroll",function(){
-	if($(document).scrollTop() <= $windowHeight && $(window).width() <= 760){
-		//$navContainer.css({'position':'absolute',top:'0'});
-		//navDroppedDown = false;
-		$menuLogo.css({'background-image':'url(korlogo_hz.png)','width':'200'});
+	var $tempWidth = $(window).width();
+	console.log($tempWidth);
+	if($(document).scrollTop() <= $windowHeight && $tempWidth <= 760){
+		//$menuLogo.css({'background-image':'url(korlogo_hz.png)','width':'200'});
+		$menuLogo.switchClass('menuLogo_short','menuLogo_long',200);
 	}
-	else if($(window).width() <= 760){
-		$menuLogo.css({'background-image':'url(img/korlogo_tiny.png)','width':'70'});
+	else if($tempWidth <= 760){
+		//$menuLogo.css({'background-image':'url(img/korlogo_tiny.png)','width':'70'});
+		$menuLogo.switchClass('menuLogo_long','menuLogo_short',200);
 	};
 });
 
@@ -90,5 +92,7 @@ $(window).on("scroll",function(){
 
 $(window).resize(function(){
 	$splashTop.css({'height':fullWindowHeight()});
-
-})
+	if($(window).width() >= 760){
+		$navContainer.css({'top':0});
+	};
+});

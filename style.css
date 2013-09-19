@@ -29,21 +29,18 @@ a{
 
 .navButton:hover, .button:hover{
 	cursor:pointer;
+	background-color:#DFD;
 }
 
 /*mobile first layout*/
 
-.navCats li{
+.navButton{
 	display:block;
 	padding:.4em;
 	margin: 0 5% .1em 5%;
 	text-align:center;
 	background-color:#CFC;
 	border-radius:.4em;
-}
-
-.navCats li:hover{
-	background-color:#DFD;
 }
 
 #navi{
@@ -91,13 +88,22 @@ a{
 }
 
 #menuLogo{
-	width: 200px;
 	height:38px;
 	background-image: url(korlogo_hz.png);
 	display:inline-block;
 	margin-right:-10px;
 	z-index:8;
 	border-bottom-left-radius: 15px;
+}
+
+/*menuLogo variants*/
+.menuLogo_long{
+	width:200px;
+}
+
+.menuLogo_short{
+	/*background-image: url(img/korlogo_tiny.png) no-repeat top left;*/
+	width:75px;
 }
 
 #navReset{
@@ -143,7 +149,7 @@ a{
 }
 
 .splashContainer{
-	position:absolute;
+	position:relative;
 	width:100%;
 	max-width:500px;
 	height:33%;
@@ -151,7 +157,10 @@ a{
 	border-bottom: 1px solid black;
 	border-top: 1px solid black;
 	border-radius: 15px;
+	background-repeat: no-repeat;
+	background-position: 10%;
 	box-sizing: border-box;
+	text-align:left;
 	margin: 0 auto;
 }
 
@@ -162,26 +171,24 @@ a{
 	background: rgba(0,0,0,.75);
 	width: 75%;
 	bottom:0;
-	padding-left:1em;
+	left:0;
+	padding-left:.5em;
 	border-bottom-left-radius:10px;
 	border-top-right-radius: 15px;
 	z-index:0;
 }
 
 #fightSplash{
-	top:66%;
 	background-image: url(img/cards_fight.jpg);
 	background-size: 100%;
 }
 
 #visionSplash{
-	top:33%;
 	background-image: url(img/cards_vision.jpg);
 	background-size: 100%;
 }
 
 #juicingSplash{
-	top:0%;
 	background-image: url(img/cards_juicing.jpg);
 	background-size: 100%;
 }
@@ -189,6 +196,7 @@ a{
 .cardText{
 	color:#fff;
 	display:none;
+	text-align:left;
 }
 
 /*.cardText:hover{
@@ -212,6 +220,7 @@ a{
 /*generalized selectors; look into simplifying/specifying*/
 #mainContent img{
 	width:90%;
+	max-width:300px;
 	padding: 2em 0 2em;
 }
 
@@ -249,7 +258,7 @@ dd{
 
 
 /*layout if mid-size screen*/
-@media only screen and (min-width: 480px) and (max-width: 760px){
+@media only screen and (min-width: 480px) and (max-width: 760px) and (orientation:landscape){
 	#navi{
 		margin-left:25%;
 		position:relative;
@@ -257,7 +266,7 @@ dd{
 		text-align:center;
 	}
 
-	.navCats li{
+	.navButton{
 		display:block;
 		margin:0;
 		background-color:#fff;
@@ -284,21 +293,20 @@ dd{
 		top:0;
 	}
 
-	#mainContent img{
-		max-width:585px;
-	}
-
 	h1{
 		font-size:2em;
 	}
 
 	.splashContainer{
-		width:75%;
+		width:40%;
+		height:40%;
+		position:absolute;
 	}
 
 	#visionSplash{
-		top:33%;
-		left:12%;
+		top:30%;
+		left:30%;
+		z-index:1;
 	}
 
 	#juicingSplash{
@@ -306,8 +314,8 @@ dd{
 	}
 
 	#fightSplash{
-		top:66%;
-		left: 24%;
+		top:60%;
+		left: 60%;
 	}
 
 }
@@ -323,11 +331,11 @@ dd{
 		width:100%;
 	}
 
-	.navCats li{
+	.navButton{
 		display:inline-block;
 		margin:0;
 		background-color:#fff;
-		padding: 0 1% 0 1%;
+		padding: .5em 1% .5em 1%;
 	}
 
 	#logoimage{
@@ -352,8 +360,8 @@ dd{
 		display:none;
 	}
 
-	img{
-		width:auto;
+	#mainContent img {
+		max-width:470px;
 	}
 
 	h1{
@@ -372,7 +380,8 @@ dd{
 	.splashContainer{
 		display:inline-block;
 		position:relative;
-		width:32%;
+		width:30%;
+		max-width:312px;
 		top:10% !important;
 	}
 
@@ -380,11 +389,16 @@ dd{
 		bottom:auto;
 	}
 
+	.card{
+		font-size:1.1em;
+	}
+
 	.cardText{
 		display:inline-block;
 		position:absolute;
 		top:110%;
-		text-align:justify;
+		text-align:left;
+		font-size:.9em;
 		/*need to figure out why this was needed */
 		width:90%;
 		left:5%;
