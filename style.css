@@ -15,7 +15,7 @@ body{
 
 /*utility classes*/
 .hidden{
-	display:none;
+	display:none !important;
 }
 
 .fixedPos{
@@ -27,9 +27,9 @@ a{
 	text-decoration:none;
 }
 
-.navButton:hover, .button:hover{
+.navButton:hover, .button:hover, .buttonHighlight{
 	cursor:pointer;
-	background-color:#DFD;
+	background-color:#DFD !important;
 }
 
 /*mobile first layout*/
@@ -158,7 +158,6 @@ a{
 	border-top: 1px solid black;
 	border-radius: 15px;
 	background-repeat: no-repeat;
-	background-position: 10%;
 	box-sizing: border-box;
 	text-align:left;
 	margin: 0 auto;
@@ -181,6 +180,7 @@ a{
 #fightSplash{
 	background-image: url(img/cards_fight.jpg);
 	background-size: 100%;
+	background-position: center bottom !important;
 }
 
 #visionSplash{
@@ -199,9 +199,9 @@ a{
 	text-align:left;
 }
 
-/*.cardText:hover{
-	display:inline;
-}*/
+.socialTab, .mottoContainer{
+	display:none;
+}
 
 #theRest{
 	position:relative;
@@ -254,6 +254,11 @@ dt{
 
 dd{
 	margin-left:2em;
+}
+
+#footerText{
+	text-align:center;
+	margin-top:600px;
 }
 
 
@@ -320,6 +325,11 @@ dd{
 
 }
 
+@media only screen and (max-height: 650px){
+	.mottoContainer{
+		display:none !important;
+	}
+}
 
 /*layout if full-screen*/
 @media only screen and (min-width: 761px){
@@ -347,6 +357,7 @@ dd{
 
 	#navContainer{
 		position:fixed;
+		display:inline !important;
 		padding-right:200px;
 		top:0;
 	}
@@ -368,9 +379,6 @@ dd{
 		font-size:3em;
 	}
 
-	.hidden{
-		display:inline;
-	}
 
 	#splashTop{
 		margin-top:120px;
@@ -380,6 +388,8 @@ dd{
 	.splashContainer{
 		display:inline-block;
 		position:relative;
+		height:50%;
+		max-height:230px;
 		width:30%;
 		max-width:312px;
 		top:10% !important;
@@ -404,4 +414,32 @@ dd{
 		left:5%;
 		padding:;
 	}
+
+	.socialTab{
+		display:inline;
+		position:absolute;
+		bottom:0;
+		left:0;
+		width:100%;
+		z-index:1;
+		text-align:center;
+	}
+
+	.socialButton{
+		margin:.5em;
+		display:inline-block;
+	}
+
+	.mottoContainer{
+		display:block;
+		width:100%;
+		position:absolute;
+		bottom:75px;
+		font-size:2em;
+		color:white;
+		text-align:center;
+		text-shadow: .1em .1em .5em;
+	}
+
+
 }

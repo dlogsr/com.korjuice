@@ -5,9 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <link href='http://fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet' type='text/css'>
 <link type='text/css' rel='stylesheet' href='style.css'>
-<title>korjuice</title>
+<link rel="icon" type="image/png" href="img/koricon.png" />
+<title>KOR Juice - A Revolutionary New Juice Bar</title>
 </head>
 <body>
+	<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+		</script>
+		<!-- twitter -->
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 	<div id="splashTop">
 		<div class="splashContainer navButton" id="juicingSplash">
 			<div id="cardJuicing" class="card">
@@ -33,12 +45,23 @@
 		</div>
 		<div class="splashContainer navButton" id="fightSplash">
 			<div id="cardFight" class="card">
-				KOR fight vs world hunger
+				fight vs world hunger
 			</div>
 			<div class="cardText">
 				<ul>
 					<li>Each Juice purchased = Funds 1 lb of Produce to fight Global Malnutrition</li>
 				</ul>
+			</div>
+		</div>
+		<div class="mottoContainer">
+			The KOR of an Apple, the KOR of your Health, the KOR of a Cause.
+		</div>
+		<div class="socialTab">
+			<div class="socialButton">
+				<div class="fb-like" data-href="https://www.facebook.com/KORjuice" data-width="300" data-colorscheme="dark" data-show-faces="false" data-send="true"></div>
+			</div>
+			<div class="twitter-link socialButton">
+				<a href="https://twitter.com/korjuice" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @korjuice</a>
 			</div>
 		</div>
 	</div>
@@ -50,10 +73,10 @@
 				<nav>
 					<ul class="navCats">
 						<li id="juicing" class="navButton"><a href="#">juicing</a></li>
-						<li id="vision" class="navButton"><a href="#">vision</a></li>
+						<li id="vision" class="navButton"><a href="#">our vision</a></li>
 						<li id="fight" class="navButton"><a href="#">the fight</a></li>
 						<li id="testimonials" class="navButton"><a href="#">testimonials</a></li>
-						<li id="photos" class="navButton"><a href="#">photos</a></li>
+						<li id="photos" class="hidden navButton"><a href="#">photos</a></li>
 						<li id="location" class="navButton"><a href="#">location</a></li>
 					</ul>
 				</nav>
@@ -70,7 +93,7 @@
 			</div>
 		</div>
 		<div id="mainContent">
-			<section id="juicingContent">
+			<section id="juicingContent" class="contentSection">
 				<h1>Juicing</h1>
 
 				<img src="img/juicing.jpg">
@@ -95,7 +118,7 @@
 				</aside>
 			</p>
 			</section>
-			<section id="visionContent">
+			<section id="visionContent" class="contentSection">
 				<h1>KOR Vision</h1>
 
 				<img src="img/vision.jpg">
@@ -135,15 +158,15 @@
 					</dl>
 				</aside>
 			</section>
-			<section id="fightContent">
+			<section id="fightContent" class="contentSection">
 				<h1>KOR Fight</h1>
-				<img src="img/fight.jpg">
+				<img src="img/cards_fight.jpg">
 				<aside id="testimonialsText" class="sectionText">
 					<p>Each Juice purchased = Funds 1 lb of Produce to fight Global Malnutrition.</p>
 					<p>I will add some additional written content as well.</p>
 				</aside>
 			</section>
-			<section id="testimonialsContent">
+			<section id="testimonialsContent" class="contentSection">
 				<h1>Testimonials</h1>
 				<aside id="testimonialsText" class="sectionText">
 					<ul>
@@ -172,32 +195,44 @@
 				</aside>
 			</section>
 
-			<section id="photosContent">
+			<section id="photosContent" class="hidden" class="contentSection">
 				<h1>Photos</h1>
 				<aside id="photosText" class="sectionText">
-					<p>SUPERTEST!</p>
-					<p>SUPERTEST!</p>
-					<p>SUPERTEST!</p>
-					<p>SUPERTEST!</p>
-					<p>SUPERTEST!</p>
-					<p>SUPERTEST!</p>
-					<p>SUPERTEST!</p>
-					<p>SUPERTEST!</p>
-					<p>SUPERTEST!</p>
+					Coming soon!
+					<div class="photoGridRow">
+						<div class="photoGridElement"></div>
+						<div class="photoGridElement"></div>
+						<div class="photoGridElement"></div>
+					</div>
+					<div class="photoGridRow">
+						<div class="photoGridElement"></div>
+						<div class="photoGridElement"></div>
+						<div class="photoGridElement"></div>
+					</div>
 				</aside>
 			</section>
-			<section id="locationContent">
+			<section id="locationContent" class="contentSection">
 				<h1>Location</h1>
 				<aside id="locationText" class="sectionText">
-					We plan to open our first store in Southern California with hopes to expand to where you the Juicers want us!
+					<p>We plan to open our first store in Southern California with hopes to expand to where you the Juicers want us!
+					</p>
+				</aside>
+				<!--<aside id="survey" class="sectionText hidden">
+					<script type="text/javascript" src="https://aytm.com/pw/js/pw_share.js?t=rb33fb3"></script>
+					 <div id="aytm-pw-rb33fb3" rel="https://aytm.com/rb33fb3?ifr=t&content_width=542&w_bg=f" style="width:542px;"> <div id="aytm-pw-rb33fb3-loader" style="position:relative;display:none;clear:both;width:542px;height:260px;padding:40px 0 0;margin:0 auto;text-align:center;background:transparent url(https://aytm.com/images/pw/selp.png) no-repeat scroll center center;"> <img src="https://aytm.com/images/pw/sel.png" alt="AYTM" style="margin:0 auto;padding:0;border:0 none;"/> </div> <div style="display:block;color:#555555;font-family:Calibri,Trebuchet MS;font-size:13px;line-height:15px;padding:0px 10px 10px;"> Create stunning online surveys free of charge. <a href="https://aytm.com/" target="_blank" style="color:#1B75BB;font-family:Calibri,Trebuchet MS;font-size:13px;line-height:15px;">AYTM Market Research</a> </div> </div> 
+				</aside>-->
+			</section>
+			<section id="footer" class="contentSection">
+				<aside id="footerText" class="sectionText">
+					Copyright KOR Juice © 2013  |  Design by <a href="http://www.ryandumlao.com" target="_blank">RD Design</a>
 				</aside>
 			</section>
-
 			
 		</div>
 	</div>
-	<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="jquery-1.9.1.js"></script>
 	<script type="text/javascript" src="jquery-ui-1.10.3.custom.min.js"></script>
+	<script type="text/javascript" src="waypoints.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
