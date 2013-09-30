@@ -11,8 +11,6 @@ body{
    margin: 0px;
    padding: 0px;
 }
-
-
 /*utility classes*/
 .hidden{
 	display:none !important;
@@ -25,6 +23,15 @@ body{
 a{
 	color:#000;
 	text-decoration:none;
+}
+
+p{
+	padding:.5em;
+}
+
+dd{
+	margin-top:.65em;
+	margin-bottom:.65em;
 }
 
 .navButton:hover, .button:hover, .buttonHighlight{
@@ -211,6 +218,27 @@ a{
 	text-align:justify;
 	padding: 1em;
 	margin-top:1em;
+}
+
+
+#feedbackLink{
+	text-align:center;
+	font-weight:normal;
+	background-color:#dedede;
+	border-radius:10px;
+	max-width:600px;
+	margin:auto;
+	padding:1em;
+}
+
+.social{
+	display:inline-block;
+	width:75px;
+	margin:auto;
+}
+
+#socialButtons{
+	text-align:center;
 }
 
 /*#testimonialsText{

@@ -1,0 +1,277 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"webWn",
+				"webWindowSubText"
+			],
+			[
+				"webWindow",
+				"webWindowSubText"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Ryan/Documents/GitHub/com.korjuice/test.html",
+		"/C/Users/Ryan/Documents/GitHub/com.korjuice/jquery-ui-1.10.3.custom.min.js",
+		"/C/Users/Ryan/Documents/GitHub/com.korjuice/index_nocss.html",
+		"/C/Users/Ryan/Documents/GitHub/shibatafloral/locations.html",
+		"/C/Users/Ryan/Documents/GitHub/shibatafloral/gmail/index.html",
+		"/C/Users/Ryan/Documents/GitHub/shibatafloral/products.php",
+		"/C/Users/Ryan/Documents/GitHub/com.ryandumlao.v2/mini_styles.css",
+		"/C/Users/Ryan/Documents/GitHub/com.ryandumlao.v2/jquery-ui-1.10.3.custom/css/dumlao-green/jquery-ui-1.10.3.custom.min.css",
+		"/C/Users/Ryan/Documents/GitHub/com.ryandumlao_original/style.css",
+		"/C/Users/Ryan/Documents/GitHub/com.ryandumlao_original/resume.html",
+		"/C/Users/Ryan/Documents/GitHub/com.ryandumlao_original/script.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"webportfol",
+			"hidden",
+			"hover",
+			"socialTab",
+			"google",
+			"hidden",
+			"sourceMappingURL",
+			"text-align",
+			".navCats li",
+			");\n",
+			"-250",
+			"maincontent",
+			"img",
+			"$window",
+			"splashtop",
+			"760",
+			"-250",
+			"hidden",
+			"absolute",
+			"hidden",
+			"button",
+			"90%",
+			"padding",
+			"38",
+			"sectiontext",
+			"top:",
+			"fixed",
+			"$button",
+			".button",
+			"hover",
+			"text-align",
+			"decoration",
+			"over",
+			"button",
+			"<a",
+			"navCat",
+			"specials",
+			"side",
+			"submitted",
+			"section",
+			"sectuib",
+			"content",
+			"image",
+			"products",
+			"lo",
+			"floral",
+			"font-size",
+			"loctop",
+			"647",
+			"667",
+			"647",
+			"max-",
+			"toplogo",
+			"crest",
+			"toplogo",
+			"crest",
+			"height",
+			"min-",
+			"border",
+			"contact",
+			"url",
+			"li ",
+			"li",
+			"height",
+			"navBar",
+			"800px",
+			"currsection",
+			"hover",
+			"navbar",
+			"primary",
+			"h1",
+			"fullbar",
+			"mini",
+			"navbar",
+			"nametest",
+			"29",
+			"height",
+			"smoosh",
+			"navBar",
+			"navbar",
+			"fullbar",
+			"resume",
+			"article",
+			"both",
+			"resume",
+			"images/ui-bg_flat_65_ccff11_40x100.png)",
+			"ui-accordion-content",
+			"#about",
+			"center",
+			"arial",
+			"content",
+			"resumefull",
+			"resume",
+			"namebar",
+			"mainbar",
+			"fullbar",
+			"z-index",
+			"25",
+			"30",
+			"left",
+			"800",
+			"top",
+			"68",
+			"6",
+			"68",
+			"hidden",
+			"li",
+			"navtop",
+			"navigation",
+			"content"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			".navButton",
+			"$navButton",
+			"about",
+			"'Muli'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.486458333333,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
