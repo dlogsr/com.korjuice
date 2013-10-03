@@ -9,6 +9,9 @@ var $navButton = $('.navButton'),
 	$menuContainer = $('#menuContainer'),
 	$splashTop = $('#splashTop'),
 	$menuLogo = $('#menuLogo'),
+	$logoImage = $('#logoimage'),
+	$iggFrame = $('.iggFrame'),
+	$iggClose = $('#iggClose'),
 	$windowHeight = $(window).height();
 var offset, section, navDroppedDown;
 
@@ -70,7 +73,19 @@ $(document).ready(function(){
 
 	$('#navClose').click(function(){
 		closeNavMenu();
-	})
+	});
+
+	$iggClose.click(function(){
+		$iggFrame.slideUp(200);
+	});
+
+	/*$('#logoimage').hover(
+		function(){
+			$iggFrame.slideDown(200);
+		},
+		function(){
+			$iggFrame.slideUp(200);
+		});*/
 });
 
 
